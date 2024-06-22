@@ -1,0 +1,114 @@
+// User.java
+public class User {
+    private Long id;
+    private String firstName;
+    private Boolean isBot;
+    private String lastName;
+    private String userName;
+    private String languageCode;
+
+    // Getters and Setters
+}
+
+// Chat.java
+public class Chat {
+    private Long id;
+    private String type;
+    private String firstName;
+    private String lastName;
+
+    // Getters and Setters
+}
+
+// InlineKeyboardButton.java
+public class InlineKeyboardButton {
+    private String text;
+    private String callbackData;
+
+    // Getters and Setters
+}
+
+// InlineKeyboardMarkup.java
+public class InlineKeyboardMarkup {
+    private List<List<InlineKeyboardButton>> keyboard;
+
+    // Getters and Setters
+}
+
+// Message.java
+public class Message {
+    private Long messageId;
+    private User from;
+    private Integer date;
+    private Chat chat;
+    private String text;
+    private InlineKeyboardMarkup replyMarkup;
+
+    // Getters and Setters
+}
+
+// CallbackQuery.java
+public class CallbackQuery {
+    private String id;
+    private User from;
+    private Message message;
+    private String data;
+
+    // Getters and Setters
+}
+
+// Update.java
+public class Update {
+    private Long updateId;
+    private CallbackQuery callbackQuery;
+
+    // Getters and Setters
+}
+//---------------------------
+{
+  "updateId": 489804807,
+  "message": null,
+  "inlineQuery": null,
+  "chosenInlineQuery": null,
+  "callbackQuery": {
+    "id": "1330098497985695566",
+    "from": {
+      "id": 6752138633,
+      "firstName": "Bot",
+      "isBot": false,
+      "lastName": "User",
+      "userName": null,
+      "languageCode": "en"
+    },
+    "message": {
+      "messageId": 578,
+      "from": {
+        "id": 6968796956,
+        "firstName": "zBot",
+        "isBot": true,
+        "lastName": null,
+        "userName": "zeerosbot"
+      },
+      "date": 1718888633,
+      "chat": {
+        "id": 6752138633,
+        "type": "private",
+        "firstName": "Bot",
+        "lastName": "User"
+      },
+      "text": "Show button sale:",
+      "replyMarkup": {
+        "keyboard": [
+          [
+            {
+              "text": "Deposit",
+              "callbackData": "d"
+            }
+          ]
+        ]
+      }
+    },
+    "data": "d",
+    "chatInstance": "7042726883275161630"
+  }
+}

@@ -63,6 +63,7 @@
     </dependencies>
 <modules>
     <module>UBotProject</module>
+    <module>messageHandler</module>
 </modules>
     <build>
         <plugins>
